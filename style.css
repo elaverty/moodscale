@@ -1,0 +1,101 @@
+/* Global styles */
+
+body {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  background-color: #555555;
+  color: #eeeeee;
+}
+
+a {
+  color: #eeeeee;
+}
+
+canvas {
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  width: 80%;
+  max-width: 600px;
+}
+
+
+/* Specific element styles */
+
+#fileList {
+  display: block;
+  text-align: left;
+  list-style: none;
+}
+
+#imageSelect {
+  text-align: left;
+}
+
+#imageSelect a {
+  color: cyan;
+}
+
+#goButton {
+  display: none;
+}
+
+#custom {
+  display: none;
+}
+
+#titleSelect {
+  display: none;
+}
+
+#moodScale {
+  display: none;
+}
+
+#footer {
+  display: none;
+  text-align: center;
+}
+
+#imageUpload,
+#custom,
+#moodScale {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+#imageUpload em,
+#moodScale em {
+  font-size: 12px;
+  font-style: italic;
+}
+
+#custom label,
+#moodScale label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#custom label input,
+#moodScale label input {
+  margin-left: 10px;
+}
+
+#custom input[type="input"] {
+  width: 200px;
+  margin-top: 10px;
+  display: none;
+}
+
+#download {
+  margin-top: 10px;
+}
+
+#footer p {
+  font-size: 14px;
+}
+
+#footer .tiny {
+  font-size: 12px;
+}
