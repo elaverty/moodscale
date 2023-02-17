@@ -9,4 +9,5 @@ The user can adjust the colors and the title.
 
 
 Example output:
+
 ![scale](https://user-images.githubusercontent.com/6283376/219770906-e64e3d66-259a-4406-8bc7-b8a4aa57bd3b.png)
