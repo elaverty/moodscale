@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>moodScales.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+	<h1>Make a custom MoodScale image!</h1>
+	
+	<div id="imageUpload">
+		<label for="file">
+			<input type="file" multiple accept="image/*" name="image" id="file" onchange="handleFiles(event)">
+			<span>Select some images</span>
+		</label>
+		<p><em>This currently works best with 4 or 9 images</em></p>
+	</div>
+
+	<div id="goButton">
+		<label>Click to create your MoodScale image!
+			<input type="submit" onclick="draw()">
+		</label>
+	</div>
+
+	<div id="custom">
+		<label for="colorpicker0">Background
+			<input type="color" id="colorpicker0" value="#000000" onchange="backgroundColor(value)">
+		</label>
+		<label for="colorpicker1">Text
+			<input type="color" id="colorpicker1" value="#eeeeee" onchange="titleColor(value)">
+		</label>
+		<label for="colorpicker2">Numbers
+			<input type="color" id="colorpicker2" value="#0000ff" onchange="numColors(value)">
+		</label>
+		<input type="input" id="titleChange" value="How are you today?" style="display:none" onclick="showInput()">
+		<label for="titleChange"><u>Change the title</u></label>
+		<br>
+	</div>
+
+	<div id="moodScale">
+		<canvas id="canvas" width="600" height="850" aria-label="Custom mood scale"></canvas>
+		<p><em>Save your image by using right-click, then save-as or <button id="download">click here</button> to download.</em></p>
+	</div>
+
+	<div id="footer">
+		&copy2023 Liz Laverty
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
